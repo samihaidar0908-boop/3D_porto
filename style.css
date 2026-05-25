@@ -22,6 +22,10 @@ body {
     overflow-x: hidden;
 }
 
+section {
+     animation: sliderUp 1s ease-in-out forwards;
+}
+
 /* NAVBAR */
 nav {
     width: 100%;
@@ -604,8 +608,3 @@ footer {
             transform: translateY(0);
         }
     }
-        
-        /* Pasang ke class */
-        .slideUp {
-            animation: sliderUp 1s ease-in-out forwards;
-        }
