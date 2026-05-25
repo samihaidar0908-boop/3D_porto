@@ -1,4 +1,4 @@
-\@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -594,3 +594,18 @@ footer {
     .section-title { font-size: 2rem; }
     .stat-item h2 { font-size: 2.2rem; }
 }
+
+@keyframes sliderUp {
+        from { opacity: 0; 
+            transform: translateY(30px);  
+        }
+        to { 
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+        
+        /* Pasang ke class */
+        .slideUp {
+            animation: sliderUp 1s ease-in-out forwards;
+        }
