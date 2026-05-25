@@ -23,7 +23,22 @@ body {
 }
 
 section {
-     animation: sliderUp 1s ease-in-out forwards;
+    width: 100%;
+    position: relative;
+}
+
+.hidden-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), 
+                transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: opacity, transform;
+}
+
+/* Kondisi saat section aktif terpicu scroll / klik (Hanya jalan 1x) */
+.reveal-section {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* NAVBAR */
